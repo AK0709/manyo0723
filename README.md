@@ -29,3 +29,4 @@
 |connect_tasks_labels|
 |---|
 |id<br>tasks_id(FK)<br>labels_id(FK)|
+
