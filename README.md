@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 万葉ワーク仕様
+### テーブル設計について
+テーブルはusers, tasks, labels, connect_tasks_labels　の4種類がある。
+詳細については下記の通り。
 
-Things you may want to cover:
+|users|
+|---|
+|id|
+|name:string<br>e_mail:text<br>password:string|
 
-* Ruby version
+---
 
-* System dependencies
+|tasks|
+|---|
+|id<br>user_id(FK)<br>connect_tasks_labels(FK)|
+|title:string<br>content:text<br>dead_line:date<br>priority:integer<br>status:string<br>create_date:date|
 
-* Configuration
+---
 
-* Database creation
+|labels|
+|---|
+|id<br>users_id(FK)<br>connect_tasks_labels(FK)|
+|contents:text|
 
-* Database initialization
+---
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+|connect_tasks_labels|
+|---|
+|id<br>tasks_id(FK)<br>labels_id(FK)|
