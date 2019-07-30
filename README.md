@@ -2,7 +2,6 @@
 ### テーブル設計について
 テーブルはusers, tasks, labels, connect_tasks_labels　の4種類がある。
 詳細については下記の通り。
-
 |users|
 |---|
 |id|
@@ -27,3 +26,4 @@
 |connect_tasks_labels|
 |---|
 |id<br>tasks_id(FK)<br>labels_id(FK)|
+
