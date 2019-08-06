@@ -1,0 +1,8 @@
+
+
+
+ボタンを押すと、譲渡先が自家消費ではないもののgoyaの情報を載せたページが表示される機能を実装すること
+select * from crops where not(give_for = '自家消費');
+
+ボタンを押すと、品質が悪いもの（false）のgoyaの情報を載せたページが表示される機能を実装すること
+select * from crops where quality = false;
